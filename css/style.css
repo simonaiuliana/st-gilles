@@ -146,6 +146,13 @@
         transition: .5s;
         opacity: 1;
     }
+
+    .page-header {
+        background: url(../img/missionLocale.jpg) center center no-repeat;
+        background-size: cover;
+        height: 500px;
+       
+    }
 }
 
 .logo{
@@ -508,4 +515,17 @@
     color: var(--light);
     letter-spacing: 1px;
     box-shadow: none;
+}
+
+
+@media (max-width: 768px) {
+    .btn-container {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .btn-container .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
