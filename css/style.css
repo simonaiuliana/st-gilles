@@ -5,8 +5,8 @@
 
 /********** Template CSS **********/
 :root {
-    --primary: rgb(0, 168,159);   
-    --secondary:  rgb(227,0,86);
+    --primary: #00a89f;   
+    --secondary:  #e30056;
     --light: #ffffff;
     --dark: #292929;
 }
@@ -201,17 +201,17 @@
 .page-header {
     background: url(../img/missionLocale.jpg) center center no-repeat;
     background-size: cover;
-   
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
-    color: var(--light);
+    color: var(--dark);
+
 }
 
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
     font-size: 18px;
-    color: var(--light);
+    color: var(--dark);
 }
 
 
@@ -219,7 +219,6 @@
 .section-title {
     position: relative;
     display: inline-block;
-    text-transform: uppercase;
     font-weight: 600;
 }
 
@@ -275,6 +274,11 @@
     position: relative;
     border-radius: 8px;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+.page-header {
+    background: url(../img/office.jpg)  no-repeat;
+    background-size: cover;
+   
 }
 
 .service-item .service-img {
