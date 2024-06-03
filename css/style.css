@@ -538,33 +538,17 @@
         margin-bottom: 10px;
     }
 }
-body {
-    color: var(--text-color);
-    background-color: var(--body-bg);
-    font-family: 'Open Sans', sans-serif;
-  }
-  // Your current plan label
-  .chosen-plan {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    width: 100%;
-    max-width: 400px;
-    margin-inline: auto;
-    padding: 1.5rem 0;
-    background-color: var(--primary-color);
-    text-align: center;
-    border-radius: 0 0 15px 15px;
-    span:first-of-type {
-      margin-bottom: 8px;
-      display: block;
-      font-weight: 400;
-    }
+
+
+
+
+
+  
     .plan-name {
       font-size: 1.125rem;
       font-weight: 700;
     }
-  }
+  
   
   .page-title {
     font-size: 2rem;
@@ -613,178 +597,12 @@ body {
   }
   
   .pricing-table {
-    max-width: 500px;
-    padding-inline: var(--container-x);
+    max-width: 1500px;
+    
     margin-inline: auto;
     margin-block: 40px;
     @media screen and (min-width: 920px) {
-      max-width: var(--container-mw);
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-    }
-    .plan {
-      background-color: #22262C;
-      padding: 2rem;
-      border-radius: 12px;
-      display: flex;
-      flex-direction: column;
-      @media screen and (max-width: 920px) {
-        &:not(:last-of-type) {
-          margin-bottom: 40px;
-        }
-      }
-      .name {
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 600;
-        margin-top: 0;
-        margin-bottom: 18px;
-      }
-      .price {
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-bottom: 30px;
-        sub {
-          position: static;
-          font-size: 1.5rem;
-        }
-      }
-      &.enterprise .price {
-        font-size: 1.5rem;
-      }
-      .maus-options {
-        display: block;
-        width: 100%;
-        max-width: 300px;
-        margin-inline: auto;
-        select {
-          background-color: transparent;
-          color: #fff;
-          padding: 1rem;
-          border: 1px solid #fff;
-          border-radius: 5px;
-          display: block;
-          width: 100%;
-          margin-bottom: 5px;
-          & + span {
-            font-size: 0.875rem;
-            color: var(--primary-color)
-          }
-        }
-      }
-      .features {
-        margin-block: 30px;
-        li {
-          margin-bottom: 15px;
-          line-height: 1.5;
-          &::marker {
-            color: var(--primary-color);
-          }
-        }
-      }
-      .choose-btn {
-        display: block;
-        width: 100%;
-        max-width: 250px;
-        margin-inline: auto;
-        margin-top: auto;
-        padding: 1rem 1rem;
-        font-weight: 600;
-        background-color: transparent;
-        color: #fff;
-        border: 1px solid var(--primary-color);
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.1s;
-        &:hover, &.active {
-          background-color: var(--primary-color);
-        }
-      }
-    }
-  }
-  body {
-    color: var(--text-color);
-    background-color: var(--body-bg);
-    font-family: 'Open Sans', sans-serif;
-  }
-  // Your current plan label
-  .chosen-plan {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    width: 100%;
-    max-width: 400px;
-    margin-inline: auto;
-    padding: 1.5rem 0;
-    background-color: var(--primary-color);
-    text-align: center;
-    border-radius: 0 0 15px 15px;
-    span:first-of-type {
-      margin-bottom: 8px;
-      display: block;
-      font-weight: 400;
-    }
-    .plan-name {
-      font-size: 1.125rem;
-      font-weight: 700;
-    }
-  }
-  
-  .page-title {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    padding-inline: 10px;
-    margin-block: 3rem;
-  }
-  
-  .bill-type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.125rem;
-    gap: 10px;
-    .bill-toggle {
-      #bill-toggle {
-        display: none;
-        & + label {
-          display: block;
-          width: 60px;
-          height: 32px;
-          border-radius: 20px;
-          background-color: var(--primary-color);
-          position: relative;
-          cursor: pointer;
-          &::after {
-            content: '';
-            display: block;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background-color: #fff;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-100%, -50%);
-            transition: transform 0.2s;
-          }
-        }
-        &:checked + label::after {
-          transform: translate(0, -50%);
-        }
-      }
-    }
-  }
-  
-  .pricing-table {
-    max-width: 500px;
-    padding-inline: var(--container-x);
-    margin-inline: auto;
-    margin-block: 40px;
-    @media screen and (min-width: 920px) {
-      max-width: var(--container-mw);
+      
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.25rem;
