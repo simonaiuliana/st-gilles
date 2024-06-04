@@ -597,8 +597,7 @@
   }
   
   .pricing-table {
-    max-width: 1500px;
-    
+    max-width: 1200px;    
     margin-inline: auto;
     margin-block: 40px;
     @media screen and (min-width: 920px) {
@@ -608,8 +607,8 @@
       gap: 1.25rem;
     }
     .plan {
-      background-color: #ffffff;
-      border: solid 1px #363636;
+      background-color: #d4d4d448;
+      border: solid 1px var(--secondary);
       padding: 2rem;
       border-radius: 12px;
       display: flex;
@@ -625,12 +624,14 @@
         font-weight: 600;
         margin-top: 0;
         margin-bottom: 18px;
+        color: var(--secondary);
       }
       .price {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 700;
         margin-bottom: 30px;
+        color: var(--dark);
         sub {
           position: static;
           font-size: 1.5rem;
@@ -664,8 +665,10 @@
         li {
           margin-bottom: 15px;
           line-height: 1.5;
+          color: var(--dark);
+          font-weight: 600;
           &::marker {
-            color: var(--primary-color);
+            color: var(--dark);
           }
         }
       }
@@ -678,15 +681,17 @@
         padding: 1rem 1rem;
         font-weight: 600;
         background-color: transparent;
-        color: #272727;
-        border: 1px solid var(--primary-color);
-        border-radius: 5px;
+        color: #e30056;
+        border: 3px solid;
+        border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.1s;
-        &:hover, &.active {
-          background-color: var(--primary-color);
+      } 
+      .choose-btn:hover, .choose-btn:active {
+          background-color: var(--secondary);
+          color: var(--light);
         }
-      }
+      
     }
   }
   .header-orientation {
