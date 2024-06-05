@@ -31,6 +31,17 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+    a.text-decoration-none {
+        text-decoration: none;
+    }
+    
+    a.text-decoration-none:hover .team-item {
+        box-shadow: 0 0 30px rgba(12, 12, 12, 0.1);
+    }
+   
+</style>
+
 </head>
 
 <body>
@@ -83,9 +94,8 @@
     </div>
     <!-- Navbar End -->
 
-
-    <!-- Carousel Start -->
-    <div class="container-fluid px-0 mb-5">
+     <!-- Carousel Start -->
+     <div class="container-fluid px-0 mb-1">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -96,7 +106,7 @@
                                 <div class="col-lg-8 text-start">
                                     <p class="fs-4 text-white">Bienvenue sur le site de la Mission Locale pour l'emploi de Saint-Gilles</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">MISSION LOCALE POUR L'EMPLOI DE SAINT-GILLES</h1>
-                                    <a href="about.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">En savoir plus</a>
+                                    <a href="about.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight text-white">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +120,7 @@
                                 <div class="col-lg-8 text-end">
                                     <p class="fs-4 text-white">Nous sommes là pour vous aider</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">La vie de tes rêves commence maintenant! </h1>
-                                    <a href="orientation.html" class="btn btn-secondary rounded-pill py-3 px-5 mt-5 animated slideInLeft">En savoir plus</a>
+                                    <a href="orientation.html" class="btn btn-secondary rounded-pill py-3 px-5 mt-5 animated slideInLeft text-white">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +134,7 @@
                                 <div class="col-lg-8 text-start">
                                     <p class="fs-4 text-white">Un projet de vente de fruits et légumes biologiques et de formation des demandeurs d'emploi au métier de maraîcher bio.</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">BIOTIFUL</h1>
-                                    <a href="biotiful.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">En savoir plus</a>
+                                    <a href="biotiful.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight text-white">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -144,23 +154,26 @@
     <!-- Carousel End -->
 
 
-    <!-- About Start -->
-    <div id="about-us-section" class="container-xxl py-5">
+  
+
+
+      <!-- About Start -->
+      <div id="about-us-section" class="container-xxl py-5">
         <div class="container">
             <div class="row g-5 align-items-end">
                 <div class="col-lg-6">
                     <div class="row g-2">
                         <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
                             <div class="about-experience bg-secondary rounded">
-                                <h1 class="display-1 mb-0">36</h1>
-                                <small class="fs-5 fw-bold">Years Experience</small>
+                                <h1 class="display-1 mb-0 text-white">36</h1>
+                                <small class="fs-5 fw-bold text-white">Années d'expérience</small>
                             </div>
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
                             <img class="img-fluid rounded" src="img/informatique.png">
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
-                            <img class="img-fluid rounded" src="img/horeca.jpg">
+                            <img class="img-fluid rounded" src="img/jobs.jpg">
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
                             <img class="img-fluid rounded" src="img/AIDE-SOIGNANT.png">
@@ -168,7 +181,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
+                    <p class="section-title bg-white text-start text-primary pe-3">À propos de nous</p>
                     <h1 class="mb-4">Qui sommes-nous ?</h1>
                     <p class="mb-4">La Mission Locale pour l’emploi de Saint-Gilles (MLSG) est une ASBL d’insertion socioprofessionnelle créée en 1988 au service des demandeurs d’emploi bruxellois les plus éloignés de l’emploi de qualité. Opérateur de formation agréé par la Cocof, la MLSG est également agréée par la Région Bruxelloise en tant que "Mission Locale pour l’emploi". Elle emploie vingt-cinq travailleurs, dont quatre dans le cadre de programmes de transition professionnelle, et accompagne, forme et-oriente près de 1.000 chercheurs d’emploi par an.</p>
                     <div class="row g-5 pt-2 mb-5">
@@ -177,7 +190,7 @@
                             <h5 class="mb-3">Orientation</h5>
                             <span>Nous vous aidons à trouver votre cheminement professionnel.</span>
                             <div class="mt-4">
-                                <a class="btn btn-secondary rounded-pill py-3 px-5" href="orientation.html">Explorer</a>
+                                <a class="btn btn-secondary rounded-pill py-3 px-5 text-white" href="orientation.html">Explorer</a>
                             </div>
                         </div>
                         <div class="col-sm-6 text-center text-sm-start">
@@ -185,7 +198,7 @@
                             <h5 class="mb-3">Biotiful</h5>
                             <span>Notre objectif est de créer de l'emploi dans le secteur de l'agriculture urbaine et de l'éco-jardinage.</span>
                             <div class="mt-4">
-                                <a class="btn btn-secondary rounded-pill py-3 px-5" href="biotiful.html">Explorer</a>
+                                <a class="btn btn-secondary rounded-pill py-3 px-5 text-white" href="biotiful.html">Explorer</a>
                             </div>
                         </div>
                     </div>
@@ -195,6 +208,8 @@
     </div>
     <!-- About End -->
 
+
+   
 
     <!-- Features Start -->
     <div class="container-xxl py-5">
@@ -216,7 +231,7 @@
                     <p><i class="fa fa-check text-primary me-3"></i>Quelles sont mes compétences ?</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Préparer ses tests de sélection</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Service : Bilan socio-professionnel</p>
-                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="about.html">Explore More</a>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3 text-white" href="about.html">Explorer</a>
                 </div>
                 <div class="col-lg-6">
                     <img class="img-fluid mb-4" src="img/Hire-Orientation.png" alt=""> 
@@ -230,77 +245,79 @@
    
 
 
-   
-
-    <!-- Gallery Start -->
-    <div class="container-xxl py-5 px-0">
-        <div class="row g-0">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="row g-0">
-                    <div class="col-12">
-                        <a class="d-block" href="img/job-orientation.jpg" data-lightbox="gallery">
-                            <img class="img-fluid" src="img/job-orientation.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a class="d-block" href="img/aide-soignant.jpeg" data-lightbox="gallery">
-                            <img class="img-fluid" src="img/aide-soignant.jpeg" alt="">
-                        </a>
-                    </div>
+   <!-- Gallery Start -->
+<div class="container-xxl py-5 px-0">
+    <div class="text-center mb-4">
+        <h1 class="wow fadeInUp" data-wow-delay="0.1s">GALERIE</h1>
+    </div>
+    <div class="row g-0">
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-12">
+                    <a class="d-block" href="img/job-orientation.jpg" data-lightbox="gallery">
+                        <img class="img-fluid" src="img/job-orientation.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-12">
+                    <a class="d-block" href="img/aide-soignant.jpeg" data-lightbox="gallery">
+                        <img class="img-fluid" src="img/aide-soignant.jpeg" alt="">
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="row g-0">
-                    <div class="col-12">
-                        <a class="d-block" href="img/misioneLocale.png" data-lightbox="gallery">
-                            <img class="img-fluid" src="img/misioneLocale.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a class="d-block" href="img/informatique.png" data-lightbox="gallery">
-                            <img class="img-fluid" src="img/informatique.png" alt="">
-                        </a>
-                    </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="row g-0">
+                <div class="col-12">
+                    <a class="d-block" href="img/misioneLocale.png" data-lightbox="gallery">
+                        <img class="img-fluid" src="img/misioneLocale.png" alt="">
+                    </a>
+                </div>
+                <div class="col-12">
+                    <a class="d-block" href="img/informatique.png" data-lightbox="gallery">
+                        <img class="img-fluid" src="img/informatique.png" alt="">
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="row g-0">
-                    <div class="col-12">
-                        <a class="d-block" href="img/legumes.jpg" data-lightbox="gallery">
-                            <img class="img-fluid" src="img/legumes.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a class="d-block" href="img/horeca-serveur.jpg" data-lightbox="gallery">
-                            <img class="img-fluid" src="img/horeca-serveur.jpg" alt="">
-                        </a>
-                    </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row g-0">
+                <div class="col-12">
+                    <a class="d-block" href="img/legumes.jpg" data-lightbox="gallery">
+                        <img class="img-fluid" src="img/legumes.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-12">
+                    <a class="d-block" href="img/horeca-serveur.jpg" data-lightbox="gallery">
+                        <img class="img-fluid" src="img/horeca-serveur.jpg" alt="">
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="row g-0">
-                    <div class="col-12">
-                        <a class="d-block" href="img/equipeBiotiful.jpg" data-lightbox="gallery">
-                            <img class="img-fluid" src="img/equipeBiotiful.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a class="d-block" href="img/message.jpg" data-lightbox="gallery">
-                            <img class="img-fluid" src="img/message.jpg" alt="">
-                        </a>
-                    </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="row g-0">
+                <div class="col-12">
+                    <a class="d-block" href="img/equipeBiotiful.jpg" data-lightbox="gallery">
+                        <img class="img-fluid" src="img/equipeBiotiful.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-12">
+                    <a class="d-block" href="img/message.jpg" data-lightbox="gallery">
+                        <img class="img-fluid" src="img/message.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Gallery End -->
+</div>
+<!-- Gallery End -->
+
+    
 
 
    
 
-
-   <!-- Team Start -->
-   <div id="actualites-section" class="container-xxl py-5">
+<!-- Team Start -->
+<div id="actualites-section" class="container-xxl py-5">
     <div class="container">
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
             <p class="section-title bg-white text-center text-primary px-3">Nos formations</p>
@@ -308,30 +325,37 @@
         </div>
         <div class="row g-4">
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item rounded p-4">
-                    <img class="img-fluid rounded mb-4" src="img/atelierDuWeb.jpg" alt="" width="290px">
-                    <h5>Les métiers de l’informatique</h5>
-                    <p class="text-primary"></p>
-                </div>
+                <a href="orientation.html" class="text-decoration-none">
+                    <div class="team-item rounded p-4 h-100">
+                        <img class="img-fluid rounded mb-4 formation-img" src="img/atelierDuWeb.jpg" alt="">
+                        <h5 class="text-dark">Les métiers de l’informatique</h5>
+                        <p class="text-primary"></p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item rounded p-4">
-                    <img class="img-fluid rounded mb-4" src="img/horeca-serveur.jpg" alt="" width="400px">
-                    <h5>Horeca</h5>
-                    <p class="text-primary"></p>
-                </div>
+                <a href="orientation.html" class="text-decoration-none">
+                    <div class="team-item rounded p-4 h-100">
+                        <img class="img-fluid rounded mb-4 formation-img" src="img/horeca-serveur.jpg" alt="">
+                        <h5 class="text-dark">Horeca</h5>
+                        <p class="text-primary"></p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item rounded p-4">
-                    <img class="img-fluid rounded mb-4" src="img/aide-soignant.jpeg" alt="" width="400px">
-                    <h5>Soin et aide aux personnes âgées ou malades</h5>
-                    <p class="text-primary"></p>
-                </div>
+                <a href="orientation.html" class="text-decoration-none">
+                    <div class="team-item rounded p-4 h-100">
+                        <img class="img-fluid rounded mb-4 formation-img" src="img/aide-soignant.jpeg" alt="">
+                        <h5 class="text-dark">Soin et aide aux personnes âgées ou malades</h5>
+                        <p class="text-primary"></p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 </div>
 <!-- Team End -->
+   
 
 
    
