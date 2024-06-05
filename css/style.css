@@ -400,6 +400,7 @@
 .page-header-offre {
     background: url(../img/jobs3.jpg) no-repeat;
     background-size: cover;
+    opacity: 0.8;
 }
 
 /*** Team ***/
@@ -502,6 +503,9 @@
 /*** Footer ***/
 .footer {
     color: #B0B9AE;
+    background-color: var(--dark);
+
+   
 }
 
 .footer .btn.btn-link {
@@ -608,7 +612,7 @@
     }
     .plan {
       background-color: #d4d4d448;
-      border: solid 1px var(--secondary);
+      border: solid 1px var(--primary);
       padding: 2rem;
       border-radius: 12px;
       display: flex;
@@ -624,7 +628,7 @@
         font-weight: 600;
         margin-top: 0;
         margin-bottom: 18px;
-        color: var(--secondary);
+        color: var(--primary);
       }
       .price {
         text-align: center;
@@ -681,14 +685,14 @@
         padding: 1rem 1rem;
         font-weight: 600;
         background-color: transparent;
-        color: #e30056;
+        color: var(--primary);
         border: 3px solid;
         border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.1s;
       } 
       .choose-btn:hover, .choose-btn:active {
-          background-color: var(--secondary);
+          background-color: var(--primary);
           color: var(--light);
         }
       
