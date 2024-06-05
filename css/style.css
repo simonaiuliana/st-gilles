@@ -151,7 +151,6 @@
         background: url(../img/missionLocale.jpg) center center no-repeat;
         background-size: cover;
         height: 500px;
-       
     }
 }
 
@@ -199,8 +198,9 @@
 }
 
 .page-header {
-    background: url(../img/missionLocale.jpg) center center no-repeat;
+    background: url(../img/team.jpg) center center no-repeat;
     background-size: cover;
+    height: 500px;
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
@@ -275,10 +275,11 @@
     border-radius: 8px;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
 }
-.page-header {
-    background: url(../img/office.jpg)  no-repeat;
+.header-service{
+    background: url(../img/accomp.jpg)  no-repeat;
     background-size: cover;
-   
+    opacity: 0.9;   
+    height: 500px;
 }
 
 .service-item .service-img {
@@ -538,10 +539,6 @@
     }
 }
 
-
-
-
-
   
     .plan-name {
       font-size: 1.125rem;
@@ -696,5 +693,12 @@
   .header-orientation {
         background: url(../img/training.jpg)  no-repeat;
         background-size: cover;
-       
+        opacity: 0.8;
+        height: 500px;
+    }
+.header-img{
+        background: url(../img/orientation\(1\).jpg)  no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+        height: 500px;
     }
