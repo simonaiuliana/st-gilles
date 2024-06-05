@@ -153,12 +153,15 @@
         height: 500px;
        
     }
+   
+    
 }
 
 .logo{
     width: 200px;
 }
 /*** Header ***/
+
 .carousel-caption {
     top: 0;
     left: 0;
@@ -183,6 +186,7 @@
     background-color: var(--primary);
     border: 10px solid var(--primary);
 }
+
 
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
@@ -693,4 +697,18 @@
         background: url(../img/training.jpg)  no-repeat;
         background-size: cover;
        
+    }
+
+
+    .team-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    .formation-img {
+        height: 200px; /* Set a fixed height for all images */
+        object-fit: cover; /* Ensure the images cover the container without distortion */
+        width: 100%;
     }
