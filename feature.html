@@ -30,6 +30,23 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- logo -->
+    <style>
+      #triangle_3 {
+        transition: all 1s ease;
+      }
+      #triangle_2 {
+        transition: all 1s ease;
+        transition-delay: 1000ms;
+      }
+      #triangle_1 {
+        transition: all 1s ease;
+        transition-delay: 2000ms;
+      }
+      .triangle {
+        transform: translateX(-100%)
+      }
+    </style>
 </head>
 
 <body>
@@ -307,6 +324,19 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!--logo-->
+    <script>
+      $(document).ready(()=>{
+        $("svg .triangle").css("transform", "translateX(0%)");
+        $("svg").hover(function (){
+          const first_color = $("#triangle_1 path").css("fill");
+          $("#triangle_1 path").css("fill", $("#triangle_3 path").css("fill"));
+          $("#triangle_3 path").css("fill", $("#triangle_2 path").css("fill"));
+          $("#triangle_2 path").css("fill", first_color);
+        }, function (){
+        });
+      });
+    </script>
 </body>
 
 </html>
