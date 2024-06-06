@@ -32,6 +32,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
@@ -193,7 +196,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.9s">
                 <div class="product-item">
                     <div class="position-relative">
-                        <a href="img/cucumber.jpg" data-lightbox="gallery" data-title="Legumes2">
+                        <a class="gallery-img" href="img/cucumber.jpg" data-lightbox="gallery" data-title="Legumes2">
                             <img src="img/cucumber.jpg" alt="Legumes2">
                         </a>
                     </div>
@@ -205,7 +208,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="1.1s">
                 <div class="product-item">
                     <div class="position-relative">
-                        <a href="img/lentil.jpg" data-lightbox="gallery" data-title="lentil">
+                        <a class="gallery-img" href="img/lentil.jpg" data-lightbox="gallery" data-title="lentil">
                             <img src="img/lentil.jpg" alt="lentil">
                         </a>
                     </div>
@@ -217,7 +220,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="1.3s">
                 <div class="product-item">
                     <div class="position-relative">
-                        <a href="img/sunflower.jpg" data-lightbox="gallery" data-title="sunflower">
+                        <a class="gallery-img" href="img/sunflower.jpg" data-lightbox="gallery" data-title="sunflower">
                             <img src="img/sunflower.jpg" alt="sunflower">
                         </a>
                     </div>
@@ -229,7 +232,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="1.5s">
                 <div class="product-item">
                     <div class="position-relative">
-                        <a href="img/fresh-vegetables6.jpg" data-lightbox="gallery" data-title="legumes3">
+                        <a class="gallery-img" href="img/fresh-vegetables6.jpg" data-lightbox="gallery" data-title="legumes3">
                             <img src="img/fresh-vegetables6.jpg" alt="legumes3">
                         </a>
                     </div>
@@ -241,7 +244,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="product-item">
                     <div class="position-relative">
-                        <a href="img/gulie.jpg" data-lightbox="gallery" data-title="chou-rave">
+                        <a class="gallery-img" href="img/gulie.jpg" data-lightbox="gallery" data-title="chou-rave">
                             <img src="img/gulie.jpg" alt="chou-rave">
                         </a>
                     </div>
@@ -253,7 +256,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="product-item">
                     <div class="position-relative">
-                        <a href="img/harvest.jpg" data-lightbox="gallery" data-title="Tomates">
+                        <a class="gallery-img" href="img/harvest.jpg" data-lightbox="gallery" data-title="Tomates">
                             <img src="img/harvest.jpg" alt="Tomates">
                         </a>
                     </div>
@@ -265,7 +268,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="product-item">
                     <div class="position-relative">
-                        <a href="img/vegetables9.jpg" data-lightbox="gallery" data-title="Vente">
+                        <a class="gallery-img" href="img/vegetables9.jpg" data-lightbox="gallery" data-title="Vente">
                             <img src="img/vegetables9.jpg" alt="Vente">
                         </a>
                     </div>
@@ -277,7 +280,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="product-item">
                     <div class="position-relative">
-                        <a href="img/vegetables5.jpg" data-lightbox="gallery" data-title="Legumes">
+                        <a class="gallery-img" href="img/vegetables5.jpg" data-lightbox="gallery" data-title="Legumes">
                             <img src="img/vegetables5.jpg" alt="Legumes">
                         </a>
                     </div>
@@ -418,6 +421,17 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/main2.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $(".gallery-img").hover(
+                function (){
+                    $(this).fadeTo(0.5, 0.85)
+                },function (){
+                    $(this).fadeTo(0.5, 1)
+                }
+            ).parent().css("background-color", "rgb(0, 168, 159)");
+        });
+    </script>
 </body>
 
 </html>
