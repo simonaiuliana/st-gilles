@@ -335,6 +335,23 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/main2.js"></script>
+
+    <!-- script enveloppe -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          const sendButton = document.querySelector('.btn[type="submit"]');
+          const envelope = document.createElement('i');
+          envelope.classList.add('fa', 'fa-envelope', 'envelope');
+          document.body.appendChild(envelope);
+      
+          sendButton.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent form submission for demo purposes
+            envelope.classList.remove('fly');
+            void envelope.offsetWidth; // Trigger reflow to restart the animation
+            envelope.classList.add('fly');
+          });
+        });
+      </script>
 </body>
 
 </html>
