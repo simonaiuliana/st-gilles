@@ -224,6 +224,7 @@
     position: relative;
     display: inline-block;
     font-weight: 400;
+    font-size: 35px;
 }
 
 .section-title::before {
@@ -375,7 +376,9 @@
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .product-item .product-overlay {
@@ -400,8 +403,11 @@
 .page-header-offre {
     background: url(../img/jobs3.jpg) no-repeat;
     background-size: cover;
+    opacity: 0.9;
 }
-
+.h5{
+    color: var(--primary)
+}
 /*** Team ***/
 .team-item {
     position: relative;
@@ -502,6 +508,9 @@
 /*** Footer ***/
 .footer {
     color: #B0B9AE;
+    background-color: var(--dark);
+
+   
 }
 
 .footer .btn.btn-link {
@@ -608,7 +617,7 @@
     }
     .plan {
       background-color: #d4d4d448;
-      border: solid 1px var(--secondary);
+      border: solid 1px var(--primary);
       padding: 2rem;
       border-radius: 12px;
       display: flex;
@@ -624,7 +633,7 @@
         font-weight: 600;
         margin-top: 0;
         margin-bottom: 18px;
-        color: var(--secondary);
+        color: var(--primary);
       }
       .price {
         text-align: center;
@@ -681,21 +690,21 @@
         padding: 1rem 1rem;
         font-weight: 600;
         background-color: transparent;
-        color: #e30056;
+        color: var(--primary);
         border: 3px solid;
         border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.1s;
       } 
       .choose-btn:hover, .choose-btn:active {
-          background-color: var(--secondary);
+          background-color: var(--primary);
           color: var(--light);
         }
       
     }
   }
   .header-orientation {
-        background: url(../img/training.jpg)  no-repeat;
+        background: url(../img/cours.jpg)  no-repeat;
         background-size: cover;
         opacity: 0.8;
         height: 500px;
@@ -719,4 +728,10 @@
         height: 200px; /* Set a fixed height for all images */
         object-fit: cover; /* Ensure the images cover the container without distortion */
         width: 100%;
+    }
+
+    /*conact*/
+
+    .text-contact{
+        color: var(--dark);
     }
