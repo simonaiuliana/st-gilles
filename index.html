@@ -64,7 +64,7 @@
                 <div class="collapse navbar-collapse bg-light" id="navbarCollapse">
                     <div class="navbar navbar-nav ms-auto">
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Accueil</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" onclick="location.href='./index.html'">Accueil</a>
                             <div class="dropdown-menu m-0 bg-secondary rounded-5">
                                 <a href="./index.html#about-us-section" class="dropdown-item">Nos services</a>
                                 <a href="./index.html#" class="dropdown-item">Diaporama</a>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="nav-item dropdown">
-                            <a href="./about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Qui sommes-nous ?</a>
+                            <a href="./about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="location.href='./about.html'">Qui sommes-nous ?</a>
                             <div class="dropdown-menu m-0 bg-secondary rounded-5">
                                 <a href="./about.html" class="dropdown-item">Nos missions, notre méthodes, nos valeurs</a>
                                 <a href="./about.html" class="dropdown-item">Notre équipe</a>
@@ -81,13 +81,19 @@
                                 <a href="./about.html" class="dropdown-item">Rapport d'activités, status, comptes annuels</a>
                             </div>
                         </div>
-                        <a href="service.html" class="nav-item nav-link">Accompagnement</a>
+                        <div class="nav-item dropdown">
+                            <a href="./service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="location.href='./service.html'">Accompagnement</a>
+                            <div class="dropdown-menu m-0 bg-secondary rounded-5">
+                                <a href="./about.html" class="dropdown-item">Accompagnement individuel</a>
+                                <a href="./about.html" class="dropdown-item">Accompagnement social</a>
+                                <a href="./about.html" class="dropdown-item">Espace public numérique</a>
+                            </div>
+                        </div>
                         <a href="orientation.html" class="nav-item nav-link">Orientation</a>
                         <a href="agenda_orientation.html" class="nav-item nav-link">Agenda Formation</a>
                         <a href="emploi.html" class="nav-item nav-link">Nos offres d'emploi</a>
                         <a href="biotiful.html" class="nav-item nav-link">Biotiful</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
                 </div>
             </nav>
         </div>
@@ -98,8 +104,8 @@
      <div class="container-fluid px-0 mb-1">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel" style="background-color: black;">
             <div class="carousel-inner">
-                <div class="carousel-item active" style="width: 100vw !important;height: 100vh !important;">
-                    <img class="img-responsive min-vw-100 min-vh-100" src="img/job-orientation.jpg" alt="Image" style="opacity: 0.75;">
+                <div class="carousel-item active" style="width: 100vw !important;height: 70vh !important;">
+                    <img class="img-responsive min-vw-100 min-vh-100" src="img/job-orientation.jpg" alt="Image" style="">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
@@ -112,12 +118,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="width: 100vw !important;height: 100vh !important;">
-                    <img class="img-responsive min-vw-100 min-vh-100" src="img/cuisiner.jpg" alt="Image" style="opacity: 0.75;">
+                <div class="carousel-item" style="width: 100vw !important;height: 70vh !important;">
+                    <img class="img-responsive min-vw-100 min-vh-100" src="img/barman.jpg" alt="Image" style="">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-end">
-                                <div class="col-lg-8 text-end">
+                                <div class="col-lg-8 text-end mt-5">
                                     <p class="fs-4 text-white">Nous sommes là pour vous aider</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">La vie de tes rêves commence maintenant! </h1>
                                     <a href="orientation.html" class="btn btn-secondary rounded-pill py-3 px-5 mt-5 animated slideInLeft text-white">En savoir plus</a>
@@ -126,8 +132,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="width: 100vw !important;height: 100vh !important;">
-                    <img class="img-responsive min-vw-100 min-vh-100" src="img/vegetables9.jpg" alt="Image" style="opacity: 0.75;">
+                <div class="carousel-item" style="width: 100vw !important;height: 70vh !important;">
+                    <img class="img-responsive min-vw-100 min-vh-100" src="img/vegetables9.jpg" alt="Image" style="">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-end">
@@ -358,7 +364,7 @@
    
 
 <!-- Footer Start -->
-<div class="container-fluid bg-dark footer py-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="container-fluid  footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-3 col-md-6 text-white">
