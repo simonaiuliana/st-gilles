@@ -111,7 +111,7 @@
 
 .navbar .dropdown-toggle::after {
     border: none;
-    content: "\f107";
+    content: "↓";
     font-family: "Josefin Sans";
     font-weight: 900;
     vertical-align: middle;
