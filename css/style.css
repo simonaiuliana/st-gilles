@@ -411,9 +411,17 @@
 /*** Team ***/
 .team-item {
     position: relative;
-    text-align: center;
+    text-align: justify;
+    color: black;
     border-radius: 8px;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    h5{
+        color: #04706a;
+        text-align: center;
+    }
+   
 }
 
 .team-item .btn {
