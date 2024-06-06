@@ -224,6 +224,7 @@
     position: relative;
     display: inline-block;
     font-weight: 400;
+    font-size: 35px;
 }
 
 .section-title::before {
@@ -375,7 +376,9 @@
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .product-item .product-overlay {
@@ -400,9 +403,11 @@
 .page-header-offre {
     background: url(../img/jobs3.jpg) no-repeat;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.9;
 }
-
+.h5{
+    color: var(--primary)
+}
 /*** Team ***/
 .team-item {
     position: relative;
@@ -723,4 +728,10 @@
         height: 200px; /* Set a fixed height for all images */
         object-fit: cover; /* Ensure the images cover the container without distortion */
         width: 100%;
+    }
+
+    /*conact*/
+
+    .text-contact{
+        color: var(--dark);
     }
