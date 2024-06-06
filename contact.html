@@ -366,6 +366,7 @@
             envelope.classList.remove('fly');
             void envelope.offsetWidth; // Trigger reflow to restart the animation
             envelope.classList.add('fly');
+            document.activeElement.blur()
           });
         });
       </script>
