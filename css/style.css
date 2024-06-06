@@ -532,6 +532,9 @@
 
 
 @media (max-width: 768px) {
+
+   
+
     .btn-container {
         text-align: center;
         margin-top: 15px;
@@ -712,3 +715,5 @@
         object-fit: cover; /* Ensure the images cover the container without distortion */
         width: 100%;
     }
+    
+    
