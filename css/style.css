@@ -754,3 +754,32 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     
+
+    /*animation*/
+    .animation-container {
+        position: relative;
+        height: 400px;
+        background-color: #e0f7fa;
+        overflow: hidden;
+    }
+    
+    .fruit, .vegetable {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: fall linear infinite;
+    }
+    
+    @keyframes fall {
+        from {
+            transform: translateY(-100px);
+            opacity: 1;
+        }
+        to {
+            transform: translateY(500px);
+            opacity: 0;
+        }
+    }
+   
