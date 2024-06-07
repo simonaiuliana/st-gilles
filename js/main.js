@@ -65,5 +65,30 @@
 })(jQuery);
 
 
+//animation
 
+const container = document.querySelector('.animation-container');
+const fruitsAndVegetables = [
+    'url(img/apple.png)',
+    'url(img/carrot.jpg)',
+    'url(img/banana.png)',
+    'url(img/tomato.png)',
+    'url(img/orange.jpg)'
+];
+
+function createFallingItem() {
+    const item = document.createElement('div');
+    item.classList.add('fruit');
+    item.style.backgroundImage = fruitsAndVegetables[Math.floor(Math.random() * fruitsAndVegetables.length)];
+    item.style.left = Math.random() * 100 + '%';
+    item.style.animationDuration = Math.random() * 5 + 5 + 's';
+    container.appendChild(item);
+
+    // Remove the item after it falls out of view
+    item.addEventListener('animationend', () => {
+        item.remove();
+    });
+}
+
+setInterval(createFallingItem, 500);
 
