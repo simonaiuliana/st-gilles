@@ -188,6 +188,12 @@
 
 
 @media (max-width: 768px) {
+    .navbar{
+        height: 80px;
+    }
+    p{
+        display: none;
+    }
     #header-carousel .carousel-item {
         position: relative;
         min-height: 450px;
@@ -783,3 +789,4 @@
         }
     }
    
+    
